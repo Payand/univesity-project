@@ -5,13 +5,21 @@ body {
   margin: 0 auto;
 }
 
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+h2 {
+  text-decoration: underline;
+}
+
 table {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .container {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -27,23 +35,22 @@ table tr td:first-child {
 }
 th {
   height: 4em;
-  background-color: rgb(255, 195, 247);
+  background-color: rgb(181, 218, 255);
 }
 .blue-table {
   height: 3em;
   text-align: center;
   font-weight: 900;
   font-size: 1.1rem;
-  background-color: rgb(176, 162, 255);
+  background-color: rgb(134, 184, 255);
 }
 .green-table {
   height: 3em;
   text-align: center;
   font-weight: 900;
   font-size: 1.1rem;
-  background-color: rgb(113, 252, 0);
+  background-color: rgb(110, 183, 50);
 }
-
 header nav ul {
   list-style: none;
   display: flex;
@@ -55,4 +62,31 @@ header nav ul {
 
 header {
   background-color: rgba(0, 0, 0, 0.164);
+}
+.submit-list-c {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.submit-list {
+  margin-top: 1em;
+  font-size: 1rem;
+  font-weight: 900;
+}
+.form-search {
+  margin-bottom: 1em;
+}
+
+form {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.2em;
+  width: 100%;
+}
+
+.form-search input {
+  width: 50%;
+  height: 5vh;
+  font-size: 1.1rem;
+  font-weight: 600;
 }

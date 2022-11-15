@@ -6,10 +6,11 @@ export const UserContext = createContext();
 const UserProvider = ({ children }) => {
   //To get all subjects.
   const [subjects, setSubjects] = useState();
-  console.log(subjects);
-
+  // To Search subjects base on name and code .
+  const [search, setSearch] = useState("");
+  const [result, setResult] = useState([]);
   //To add Subjects chosen subjects to our list.
-  const [added, setAdded] = useState();
+  const [added, setAdded] = useState([]);
   //get My subjects from chosenSubject.
   const mysub = (mySubjects) => {
     const finalCourses = mySubjects.filter(
@@ -29,7 +30,22 @@ const UserProvider = ({ children }) => {
     setSubjects(updatedSubject);
     mysub(updatedSubject);
   };
+  //Search analogy.
+  const searchBar = () => {
+    const searchResult = subjects.filter(
+      (subject) =>
+        subject.subject === search ||
+        subject.code === search ||
+        subject.code.includes(search) ||
+        subject.subject.startsWith(search)
+    );
+    setResult(searchResult);
+  };
 
+  // reset button
+  const resetBtn = () => {
+    setResult([]);
+  };
   // To get data from Api
   const getData = () => {
     const { curriculum } = api;
@@ -41,11 +57,23 @@ const UserProvider = ({ children }) => {
     if (!subjects) {
       getData();
     }
-  }, [subjects]);
+    if (search) {
+      searchBar();
+    }
+  }, [subjects, search]);
 
   return (
     <UserContext.Provider
-      value={{ subjects, setSubjects, chosenSubject, added }}
+      value={{
+        subjects,
+        setSubjects,
+        chosenSubject,
+        added,
+        setSearch,
+        searchBar,
+        result,
+        resetBtn,
+      }}
     >
       {children}
     </UserContext.Provider>
