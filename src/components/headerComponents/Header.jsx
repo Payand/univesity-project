@@ -19,7 +19,9 @@ const Header = () => {
           <li>
             <NavLink to={"/search"}>Search</NavLink>
           </li>
-          <li>Contact us</li>
+          <li>
+            <a href="#footer">Contact us</a>
+          </li>
           <li>login/signUp</li>
         </ul>
       </nav>

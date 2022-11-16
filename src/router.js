@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./components/App";
-import SuggestedCourses from "./components/maincomponents/SuggestedCourses";
-import ChosenCourses from "./components/maincomponents/ChosenCourses";
-import SearchBar from "./components/searchComponents/SearchBar";
-import SearchRender from "./components/searchComponents/SearchRender";
+import SuggestedCourses from "./components/Maincomponents/SuggestedCourses";
+import ChosenCourses from "./components/Maincomponents/ChosenCourses";
+import SearchBar from "./components/SearchComponents/SearchBar";
+import SearchRender from "./components/SearchComponents/SearchRender";
 
 const router = createBrowserRouter([
   {

@@ -11,6 +11,7 @@ const UserProvider = ({ children }) => {
   const [result, setResult] = useState([]);
   //To add Subjects chosen subjects to our list.
   const [added, setAdded] = useState([]);
+  //To add login
 
   //get My subjects from chosenSubject.
   const mysub = (mySubjects) => {
@@ -50,7 +51,7 @@ const UserProvider = ({ children }) => {
 
   // To get data from Api
   const getData = () => {
-    const { curriculum } = api;
+    const { curriculum, users } = api;
 
     setSubjects(curriculum);
   };

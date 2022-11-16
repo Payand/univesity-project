@@ -8,7 +8,7 @@ const ChosenCourses = () => {
   return (
     <>
       <div className="container">
-        <h2>courses you have Chosen:</h2>
+        <h2>My Courses:</h2>
         <div className="counter">
           <p>
             count :<span>{added.length}</span>
@@ -19,7 +19,7 @@ const ChosenCourses = () => {
             <tr>
               <th>num</th>
               <th>Subjects</th>
-              <th>Id</th>
+              <th>ID</th>
               <th>Action</th>
             </tr>
             {added.length ? (

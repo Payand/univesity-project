@@ -10,7 +10,7 @@ const SearchRender = () => {
           <tr>
             <th>num</th>
             <th>Subjects</th>
-            <th>Id</th>
+            <th>ID</th>
             <th>Action</th>
           </tr>
           {result.length ? (

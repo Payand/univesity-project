@@ -6,12 +6,15 @@ import "antd/dist/antd.min.css";
 import "./index.css";
 
 import UserProvider from "./components/context/UserContext";
+import LoginProvider from "./components/context/LoginContext";
 const el = document.querySelector("#root");
 
 const root = ReactDOM.createRoot(el);
 
 root.render(
-  <UserProvider>
-    <RouterProvider router={router} />
-  </UserProvider>
+  <LoginProvider>
+    <UserProvider>
+      <RouterProvider router={router} />
+    </UserProvider>
+  </LoginProvider>
 );

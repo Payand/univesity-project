@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgb(185, 184, 184);
   color: rgb(0, 0, 0);
@@ -17,11 +21,11 @@ header nav {
 
 header nav ul li a {
   text-decoration: none;
-  color: black;
+  color: rgba(0, 0, 0, 0.562);
+  font-weight: 900;
 }
 
 header nav ul li a:hover {
-  font-weight: 500;
   color: black;
 }
 
@@ -95,6 +99,16 @@ th {
   margin-top: 1em;
   font-size: 1rem;
   font-weight: 900;
+  background-color: rgb(161, 167, 255);
+  border: 2px solid rgb(6, 22, 255);
+}
+.submit-list-disable {
+  margin-top: 1em;
+  font-size: 1rem;
+  font-weight: 900;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.281);
 }
 /* final course table submit button ends */
 /* final course table counter starts */
@@ -133,8 +147,41 @@ form {
 }
 /* modal text ends */
 
-/* contact me section starts*/
-
-/* contact me section ends */
-
 /* main ends */
+
+/* contact me section starts*/
+.footer-design {
+  margin-top: 3em;
+  width: 100%;
+
+  background-color: rgb(160, 159, 159);
+}
+.footer-content h3,
+.git-hub {
+  margin-top: 1em;
+}
+.footer-content {
+  width: 100%;
+
+  display: flex;
+}
+.footer-content-left {
+  width: 50%;
+}
+.footer-content-right {
+  width: 50%;
+
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2em;
+}
+footer a {
+  color: rgba(0, 0, 0, 0.699);
+}
+footer a:hover {
+  color: rgb(0, 0, 0);
+}
+.git-hub {
+  font-size: 2rem;
+}
+/* contact me section ends */

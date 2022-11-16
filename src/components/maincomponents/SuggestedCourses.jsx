@@ -7,14 +7,14 @@ const SuggestedCourses = () => {
   return (
     <>
       <div className="container">
-        <h2>Courses You should take:</h2>
+        <h2>Suggested:</h2>
 
         <table>
           <tbody>
             <tr>
               <th>num</th>
               <th>Subjects</th>
-              <th>Id</th>
+              <th>ID</th>
               <th>Action</th>
             </tr>
             {subjects ? (
