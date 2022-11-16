@@ -11,6 +11,7 @@ const UserProvider = ({ children }) => {
   const [result, setResult] = useState([]);
   //To add Subjects chosen subjects to our list.
   const [added, setAdded] = useState([]);
+
   //get My subjects from chosenSubject.
   const mysub = (mySubjects) => {
     const finalCourses = mySubjects.filter(
@@ -46,9 +47,11 @@ const UserProvider = ({ children }) => {
   const resetBtn = () => {
     setResult([]);
   };
+
   // To get data from Api
   const getData = () => {
     const { curriculum } = api;
+
     setSubjects(curriculum);
   };
 

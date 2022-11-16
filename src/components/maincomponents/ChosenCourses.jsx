@@ -1,13 +1,14 @@
 import React, { useContext } from "react";
 import { UserContext } from "../context/UserContext";
-
+import ButtonAccept from "../ButtonComponents/ButtonAccept";
+import ButtonDisable from "../ButtonComponents/ButtonDisable";
 const ChosenCourses = () => {
   const { added, chosenSubject } = useContext(UserContext);
 
   return (
     <>
       <div className="container">
-        <h2>courses you have Chosen</h2>
+        <h2>courses you have Chosen:</h2>
         <div className="counter">
           <p>
             count :<span>{added.length}</span>
@@ -53,17 +54,7 @@ const ChosenCourses = () => {
             )}
           </tbody>
         </table>
-        {added.length > 1 ? (
-          <div className="submit-list-c">
-            <button className="submit-list">submit</button>
-          </div>
-        ) : (
-          <div className="submit-list-c">
-            <button className="submit-list" disabled>
-              submit
-            </button>
-          </div>
-        )}
+        {added.length > 1 ? <ButtonAccept /> : <ButtonDisable />}
       </div>
     </>
   );

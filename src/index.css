@@ -7,14 +7,24 @@ body {
 
 /* Header Stars */
 
-header {
-  background-color: rgba(0, 0, 0, 0.164);
+header nav {
+  position: fixed;
+  background-color: rgb(224, 224, 224);
+  width: 100%;
+  height: 5vh;
+  z-index: 3;
 }
 
 header nav ul li a {
   text-decoration: none;
   color: black;
 }
+
+header nav ul li a:hover {
+  font-weight: 500;
+  color: black;
+}
+
 header nav ul {
   list-style: none;
   display: flex;
@@ -29,6 +39,8 @@ header nav ul {
 /* main starts */
 h2 {
   text-decoration: underline;
+  font-weight: 700;
+  padding-top: 50px;
 }
 
 /* contianer starts */
@@ -45,7 +57,7 @@ table {
 table,
 th,
 td {
-  border: 2px solid rgb(0, 0, 0);
+  border: 1.5px solid rgb(0, 0, 0);
   border-collapse: collapse;
 }
 
@@ -54,21 +66,21 @@ table tr td:first-child {
 }
 th {
   height: 4em;
-  background-color: rgb(181, 218, 255);
+  background-color: rgb(154, 204, 255);
 }
 /* tables Design ends */
 /* conditional table color based on add or delete starts*/
 .blue-table {
   height: 3em;
   text-align: center;
-  font-weight: 900;
+  font-weight: 500;
   font-size: 1.1rem;
   background-color: rgb(134, 184, 255);
 }
 .green-table {
-  height: 3em;
+  height: 7vh;
   text-align: center;
-  font-weight: 900;
+  font-weight: 500;
   font-size: 1.1rem;
   background-color: rgb(110, 183, 50);
 }
@@ -109,11 +121,18 @@ form {
 
 .form-search input {
   width: 50%;
-  height: 5vh;
+  height: 6vh;
   font-size: 1.1rem;
   font-weight: 600;
 }
 /* search form ends */
+/* modal text starts */
+.modal-text {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+/* modal text ends */
+
 /* contact me section starts*/
 
 /* contact me section ends */
