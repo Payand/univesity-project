@@ -24,6 +24,9 @@ header nav ul li a {
   color: rgba(0, 0, 0, 0.562);
   font-weight: 900;
 }
+header nav ul li {
+  cursor: pointer;
+}
 
 header nav ul li a:hover {
   color: black;
@@ -185,3 +188,43 @@ footer a:hover {
   font-size: 2rem;
 }
 /* contact me section ends */
+/* modal login from starts */
+.h-title-login {
+  color: rgb(0, 0, 0);
+  margin-bottom: 2em;
+  padding-top: 0em;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.login-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 1rem;
+  font-weight: 900;
+}
+.login-label input {
+  width: 23em;
+}
+.button-login {
+  color: rgb(255, 255, 255);
+  background-color: #022ef5;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.3em;
+}
+.login-button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  margin-top: 2em;
+}
+.ant-modal-close {
+  color: rgb(0, 0, 0);
+}
+/* modal login from ends */

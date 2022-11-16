@@ -124,7 +124,20 @@ var api = {
   users: [
     {
       id: "2020",
-      username: "Ali shooshtari",
+      username: "Ali",
+      email: "shooshtariali05@gmail.com",
+      password: 123456,
+    },
+    {
+      id: "2021",
+      username: "Moein",
+      email: "trueMoein@gmail.com",
+      password: 123456,
+    },
+    {
+      id: "2021",
+      username: "sepehr",
+      email: "sepehr@gmail.com",
       password: 123456,
     },
   ],

@@ -14,6 +14,7 @@ const router = createBrowserRouter([
         element: (
           <>
             <SearchBar />
+
             <SearchRender />
             <SuggestedCourses />
             <ChosenCourses />

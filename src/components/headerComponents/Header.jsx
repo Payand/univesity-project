@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
+import HeaderLogin from "./HeaderLogin";
 const Header = () => {
   return (
     <div>
@@ -22,7 +22,8 @@ const Header = () => {
           <li>
             <a href="#footer">Contact us</a>
           </li>
-          <li>login/signUp</li>
+
+          <HeaderLogin />
         </ul>
       </nav>
     </div>
