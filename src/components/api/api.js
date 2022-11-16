@@ -3,19 +3,19 @@ var api = {
     {
       id: "1",
       code: "3424",
-      subject: "mathematics 101",
+      subject: "Mathematics 101",
       added: false,
     },
     {
       id: "2",
       code: "2534",
-      subject: "mathematics",
+      subject: "Mathematics",
       added: false,
     },
     {
       id: "3",
       code: "2635",
-      subject: "algorithm design",
+      subject: "Algorithm design",
       added: false,
     },
     {
@@ -33,19 +33,19 @@ var api = {
     {
       id: "6",
       code: "3429",
-      subject: "mathematics 101",
+      subject: "Mathematics 101",
       added: false,
     },
     {
       id: "7",
       code: "3430",
-      subject: "mathematics",
+      subject: "Mathematics",
       added: false,
     },
     {
       id: "8",
       code: "3431",
-      subject: "algorithm design ",
+      subject: "Algorithm design ",
       added: false,
     },
     {

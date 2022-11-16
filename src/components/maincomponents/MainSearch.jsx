@@ -7,6 +7,7 @@ const MainSearch = () => {
   const onSubmitHandler = (e) => {
     e.preventDefault();
     setSearch(value);
+    setValue("");
   };
 
   return (
@@ -16,6 +17,7 @@ const MainSearch = () => {
         <form onSubmit={onSubmitHandler}>
           <input
             type="text"
+            placeholder="Search by name or code "
             value={value}
             onChange={(e) => setValue(e.target.value)}
           ></input>

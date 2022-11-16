@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <>
       <div className="container">
-        <h2>you should take these courses:</h2>
+        <h2>Courses You should take:</h2>
 
         <table>
           <tbody>
@@ -20,7 +20,10 @@ const Main = () => {
             {subjects ? (
               subjects
                 .map((subject, index) => (
-                  <tr className="blue-table" key={subject.id}>
+                  <tr
+                    className={subject.added ? "green-table" : "blue-table"}
+                    key={subject.id}
+                  >
                     <td>{index + 1}</td>
                     <td>{subject.subject}</td>
                     <td>{subject.code}</td>
@@ -45,6 +48,7 @@ const Main = () => {
             )}
           </tbody>
         </table>
+        <hr />
       </div>
     </>
   );

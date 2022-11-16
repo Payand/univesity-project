@@ -30,14 +30,14 @@ const UserProvider = ({ children }) => {
     setSubjects(updatedSubject);
     mysub(updatedSubject);
   };
-  //Search analogy.
+  //Search Logic.
   const searchBar = () => {
     const searchResult = subjects.filter(
       (subject) =>
-        subject.subject === search ||
+        subject.subject.toLowerCase() === search.toLowerCase() ||
         subject.code === search ||
         subject.code.includes(search) ||
-        subject.subject.startsWith(search)
+        subject.subject.toLowerCase().startsWith(search.toLowerCase())
     );
     setResult(searchResult);
   };

@@ -8,7 +8,11 @@ const MainCourse = () => {
     <>
       <div className="container">
         <h2>courses you have Chosen</h2>
-
+        <div className="counter">
+          <p>
+            count :<span>{added.length}</span>
+          </p>
+        </div>
         <table>
           <tbody>
             <tr>
@@ -19,7 +23,10 @@ const MainCourse = () => {
             </tr>
             {added ? (
               added.map((subject, index) => (
-                <tr className="green-table" key={subject.id}>
+                <tr
+                  className={subject.added ? "green-table" : "blue-table"}
+                  key={subject.id}
+                >
                   <td>{index + 1}</td>
                   <td>{subject.subject}</td>
                   <td>{subject.code}</td>

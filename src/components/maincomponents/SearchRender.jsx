@@ -15,7 +15,10 @@ const SearchRender = () => {
           </tr>
           {result.length ? (
             result.map((subject, index) => (
-              <tr className="blue-table" key={subject.id}>
+              <tr
+                className={subject.added ? "green-table" : "blue-table"}
+                key={subject.id}
+              >
                 <td>{index + 1}</td>
                 <td>{subject.subject}</td>
                 <td>{subject.code}</td>
@@ -35,13 +38,14 @@ const SearchRender = () => {
           ) : (
             <tr className="blue-table">
               <td></td>
-              <td>You haven't chosen any courses</td>
+              <td>you haven't search your course</td>
               <td></td>
               <td></td>
             </tr>
           )}
         </tbody>
       </table>
+      <hr />
     </div>
   );
 };

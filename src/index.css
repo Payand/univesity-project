@@ -90,3 +90,12 @@ form {
   font-size: 1.1rem;
   font-weight: 600;
 }
+
+.counter {
+  font-weight: 900;
+}
+
+.counter span {
+  font-size: 1.3rem;
+  margin-left: 0.4em;
+}
