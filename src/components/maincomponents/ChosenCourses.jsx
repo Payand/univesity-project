@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { UserContext } from "../context/UserContext";
 
-const MainCourse = () => {
+const ChosenCourses = () => {
   const { added, chosenSubject } = useContext(UserContext);
 
   return (
@@ -21,7 +21,7 @@ const MainCourse = () => {
               <th>Id</th>
               <th>Action</th>
             </tr>
-            {added ? (
+            {added.length ? (
               added.map((subject, index) => (
                 <tr
                   className={subject.added ? "green-table" : "blue-table"}
@@ -46,7 +46,7 @@ const MainCourse = () => {
             ) : (
               <tr className="blue-table">
                 <td></td>
-                <td>You haven't choose any courses</td>
+                <td>You haven't chosne any courses</td>
                 <td></td>
                 <td></td>
               </tr>
@@ -68,4 +68,4 @@ const MainCourse = () => {
     </>
   );
 };
-export default MainCourse;
+export default ChosenCourses;

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { UserContext } from "../context/UserContext";
 
-const Main = () => {
+const SuggestedCourses = () => {
   const { subjects, chosenSubject } = useContext(UserContext);
 
   return (
@@ -40,9 +40,12 @@ const Main = () => {
                     </td>
                   </tr>
                 ))
-                .splice(0, 5)
+                .splice(5, 5)
             ) : (
               <tr>
+                <td>loading...</td>
+                <td>loading...</td>
+                <td>loading...</td>
                 <td>loading...</td>
               </tr>
             )}
@@ -54,4 +57,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default SuggestedCourses;

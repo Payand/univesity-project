@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { UserContext } from "../context/UserContext";
-const MainSearch = () => {
+const SearchBar = () => {
   const { setSearch, resetBtn } = useContext(UserContext);
   const [value, setValue] = useState("");
 
@@ -29,4 +29,4 @@ const MainSearch = () => {
   );
 };
 
-export default MainSearch;
+export default SearchBar;

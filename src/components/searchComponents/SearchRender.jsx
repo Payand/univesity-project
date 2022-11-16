@@ -38,7 +38,7 @@ const SearchRender = () => {
           ) : (
             <tr className="blue-table">
               <td></td>
-              <td>you haven't search your course</td>
+              <td>No Search Results</td>
               <td></td>
               <td></td>
             </tr>

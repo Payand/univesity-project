@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./components/App";
-import Main from "./components/maincomponents/Main";
-import MainCourse from "./components/maincomponents/MainCourse";
-import MainSearch from "./components/maincomponents/MainSearch";
-import SearchRender from "./components/maincomponents/SearchRender";
+import SuggestedCourses from "./components/maincomponents/SuggestedCourses";
+import ChosenCourses from "./components/maincomponents/ChosenCourses";
+import SearchBar from "./components/searchComponents/SearchBar";
+import SearchRender from "./components/searchComponents/SearchRender";
 
 const router = createBrowserRouter([
   {
@@ -13,26 +13,26 @@ const router = createBrowserRouter([
         path: "/",
         element: (
           <>
-            <Main />
-            <MainSearch />
+            <SearchBar />
             <SearchRender />
-            <MainCourse />
+            <SuggestedCourses />
+            <ChosenCourses />
           </>
         ),
       },
       {
         path: "/myCourses",
-        element: <MainCourse />,
+        element: <ChosenCourses />,
       },
       {
         path: "/suggested",
-        element: <Main />,
+        element: <SuggestedCourses />,
       },
       {
         path: "/search",
         element: (
           <>
-            <MainSearch />
+            <SearchBar />
             <SearchRender />
           </>
         ),
